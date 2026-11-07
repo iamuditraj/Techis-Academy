@@ -5,7 +5,7 @@ export default function ScrollToTop() {
   const { pathname, hash } = useLocation();
   useEffect(() => {
     if (hash) {
-      // Give the page time to render then scroll to the anchor
+      // Give the page time to render then scroll to the anchorsfgdg
       const id = hash.replace("#", "");
       const attempt = (tries: number) => {
         const el = document.getElementById(id);
