@@ -1,0 +1,10 @@
+{
+  "description": "A responsive educational platform offering industry-focused courses, expert guidance, and career support to empower students and boost their futures.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

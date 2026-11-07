@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-navy: #071A3D;
+  --color-primary-blue: #123BCE;
+  --color-bright-blue: #2563EB;
+  --color-purple: #6D3CF5;
+  --color-orange: #F59E0B;
+  --color-bg: #F7F9FC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F7F9FC;
+  color: #071A3D;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F7F9FC; }
+::-webkit-scrollbar-thumb { background: #123BCE; border-radius: 3px; }
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #2563EB 0%, #6D3CF5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Mobile menu transition */
+.mobile-menu {
+  transition: all 0.3s ease;
+}
+
+/* Card hover */
+.course-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(18, 59, 206, 0.15);
+}
+
+/* Floating card animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Dotted pattern */
+.dots-pattern {
+  background-image: radial-gradient(circle, #2563EB22 1px, transparent 1px);
+  background-size: 24px 24px;
+}
